@@ -3,6 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  
+  handleBackground = () => {
+    var elemento = document.querySelector('.App-header');
+    elemento.style.backgroundColor = '#291A5B';
+    console.log('Cambié el color');
+  }
+
   render() {
     return (
       <div className="App">
@@ -11,14 +18,7 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <p onClick={this.handleBackground}>Seleccion</p>
         </header>
       </div>
     );
