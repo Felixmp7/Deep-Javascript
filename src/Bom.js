@@ -5,18 +5,18 @@ import './App.css';
 // BOM - Browser object model
 
 class Bom extends Component {
-  abrirVentana = url => {
-    window.open(url,"", "width=400,height=40");
-  }
+  abrirVentana = () => {
+    window.open('https://github.com/Felixmp7', "", "width=400,height=400"); //Para abrir en otra pestaña
+  }                                                                         // quito el segundo parametro.
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/Bom.js</code> and save to reload.
+            Clickea el boton para abrir en una nueva ventana tu github.
           </p>
-          <p onClick={this.abrirVentana('https://github.com/Felixmp7')}> Abrir Ventana</p>
+          <button className="boton" onClick={this.abrirVentana}>Abrir Ventana</button>
         </header>
       </div>
     );
