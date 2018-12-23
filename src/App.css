@@ -27,11 +27,15 @@
   padding: 10px;
   background: rgba(97, 218, 251, .6);
   border-radius: 3px;
+  color: white;
+  transition: all .7s ease;
 }
 
 .boton:hover{
   background: rgb(97, 218, 251);
+  color: black;
   cursor: pointer;
+  font-size: 14px;
 }
 
 @keyframes App-logo-spin {
