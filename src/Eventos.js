@@ -3,9 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 class Eventos extends Component {
 
-  cambiarFondo = () => {
-    var boton = document.querySelector('.App-header');
-    boton.style.backgroundColor = 'white';
+  cambiar = () => {
+    var fondo = document.querySelector('.App-header');
+    var texto = document.querySelector('p');
+    fondo.style.backgroundColor = 'white';
+    texto.style.color = '#282c34';
     console.log('Cambie el color');
   }
   render() {
@@ -16,7 +18,7 @@ class Eventos extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <button className="boton" onClick={this.cambiarFondo}>Presioname</button>
+          <button className="boton" onClick={this.cambiar}>Presioname</button>
         </header>
       </div>
     );
