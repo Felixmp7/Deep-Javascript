@@ -9,6 +9,9 @@ class Formulario extends Component {
     var apellido = document.querySelector('#apellido').value;
     var edad = document.querySelector('#edad').value;
     console.log(nombre,apellido,edad);
+
+    var datos = [nombre,apellido,edad];
+    console.log(datos);
   }
   render() {
     return (
@@ -25,6 +28,12 @@ class Formulario extends Component {
           </form>
         </div>
       </div>
+
+      /*<div className="resultado">
+        <ul>
+          <li>{}</li>
+        </ul>
+      </div>*/
     );
   }
 }
@@ -37,7 +46,6 @@ export default Formulario;
 
 /*Hacer un formulario con 3 botones.
 Hacer un boton de submit.
-Mostrar los datos en la pantalla.
-Tener un boton que al darle click muestre los datos actuales del formulario.*/
+Mostrar los datos en la pantalla.*/
 
 
