@@ -6,6 +6,7 @@
 
 
 .Cont-Form {
+  /*width: 400px;*/
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -14,8 +15,7 @@
 }
 
 .form {
-  width: 200px;
-  height: 300px;
+  width: 400px;
   background: #09163B;
   display: flex;
   flex-direction: column;
